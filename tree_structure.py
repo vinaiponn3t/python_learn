@@ -25,16 +25,36 @@ class TreeNode:
                 child.print_tree()
         
 def build_product_tree():
-    root = TreeNode("Sports")
+    root = TreeNode("Health food")
     
-    football = TreeNode("Football")
+    breakfast = TreeNode("Breakfast")
+    lunch = TreeNode("Lunch")
+    dinner = TreeNode("Dinner")
    
-    manchester_united = TreeNode("ManChester_United")
+    fried_rice = TreeNode("Fried_Rice")
+    beep_soup = TreeNode("Beep Soup")
     
-    ronaldo_7 = TreeNode("RONALDO_7")
-    manchester_united.add_child(ronaldo_7)
-    football.add_child(manchester_united)
-    root.add_child(football)
+    steak = TreeNode("Steak")
+    salad = TreeNode("Salad")
+    
+    breakfast.add_child(steak)
+    lunch.add_child(fried_rice)
+    lunch.add_child(beep_soup)
+    dinner.add_child(salad)
+    
+    
+    
+    greeksalad = TreeNode("Greek Salad")
+    caesarsalad = TreeNode("Caesar Salad")
+    cobbsalad = TreeNode("Cobb Salad")
+    
+    salad.add_child(greeksalad)
+    salad.add_child(caesarsalad)
+    salad.add_child(cobbsalad)
+    
+    root.add_child(breakfast)
+    root.add_child(lunch)
+    root.add_child(dinner)
     
     # print(ronaldo_7.get_level())
     # print(manchester_united.get_level())
